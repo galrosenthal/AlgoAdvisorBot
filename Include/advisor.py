@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def calculate_protfolio(list_of_ticks, img_name):
+def calculate_protfolio(list_of_ticks, img_name, type):
     #Select stocks, start year and end year, stock number has no known limit
     ## Insert Parmater
     start_year = '2009-1-1'
@@ -108,7 +108,7 @@ def calculate_protfolio(list_of_ticks, img_name):
 
     plt.xlabel('Volatility (Std. Deviation) Percentage %')
     plt.ylabel('Expected Returns Percentage %')
-    plt.title('Efficient Frontier')
+    plt.title(type)
     plt.subplots_adjust(bottom=0.4)
 
     # ------------------ Pritning 3 optimal Protfolios -----------------------

@@ -11,37 +11,37 @@ def start(update, context):
 
 def general(update, context):
     tickers = ["SPY", "QQQ", "IEI", "LQD", "TA35.TA", "FB", "GOOGL", 'AMAZ']  # The Name Tiker
-    adv.calculate_protfolio(tickers, update.message.chat_id)
+    adv.calculate_protfolio(tickers, update.message.chat_id, type='general')
     context.bot.sendPhoto(chat_id=update.message.chat.id, photo=open(str(update.message.chat_id) + '.png', 'rb'))
 
 
 def health_tech(update, context):
     tickers = ["COCP", "BLRX", "ADMP", "STIM", "TENX", "MTP", "VXRT", 'EDSA']  # The Name Tiker
-    adv.calculate_protfolio(tickers, update.message.chat_id)
+    adv.calculate_protfolio(tickers, update.message.chat_id, type='health_tech')
     context.bot.sendPhoto(chat_id=update.message.chat.id, photo=open(str(update.message.chat_id) + '.png', 'rb'))
 
 
 def utils(update, context):
     tickers = ["ENIC", "AGR", "MDU", "HE", "CMSA", "AWR", "EDN", 'HNP']  # The Name Tiker
-    adv.calculate_protfolio(tickers, update.message.chat_id)
+    adv.calculate_protfolio(tickers, update.message.chat_id, type='utils')
     context.bot.sendPhoto(chat_id=update.message.chat.id, photo=open(str(update.message.chat_id) + '.png', 'rb'))
 
 
 def energy_minerals(update, context):
     tickers = ["MTR", "BCEI", "CEIX", "INDO", "GBR", "PNRG", "ESTE", 'AR']  # The Name Tiker
-    adv.calculate_protfolio(tickers, update.message.chat_id)
+    adv.calculate_protfolio(tickers, update.message.chat_id, type='energy_minerals')
     context.bot.sendPhoto(chat_id=update.message.chat.id, photo=open(str(update.message.chat_id) + '.png', 'rb'))
 
 
 def finance(update, context):
     tickers = ["VBFC", "XYF", "VINO", "TBBK", "VSPRU", "BRPAU", "ELVT", 'GMTX']  # The Name Tiker
-    adv.calculate_protfolio(tickers, update.message.chat_id)
+    adv.calculate_protfolio(tickers, update.message.chat_id, type='finance')
     context.bot.sendPhoto(chat_id=update.message.chat.id, photo=open(str(update.message.chat_id) + '.png', 'rb'))
 
 
 def tech_services(update, context):
     tickers = ["JOBS", "CLST", "MOXC", "TKAT", "TZOO", "GB", 'TAOP']  # The Name Tiker
-    adv.calculate_protfolio(tickers, update.message.chat_id)
+    adv.calculate_protfolio(tickers, update.message.chat_id, type='tech_services')
     context.bot.sendPhoto(chat_id=update.message.chat.id, photo=open(str(update.message.chat_id) + '.png', 'rb'))
 
 
